@@ -4,7 +4,7 @@ export const loader = () => {
     const content = `
           <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       <url>
-      <loc>https://hugomalatrait.com.com/</loc>
+      <loc>https://hugomalatrait.com/</loc>
       <lastmod>	2022-03-18T17:50:47+00:00</lastmod>
       <priority>1.0</priority>
       </url>
