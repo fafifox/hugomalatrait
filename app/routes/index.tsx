@@ -10,7 +10,7 @@ const projects = [
     {
         id: 1,
         title: "Crappy Birds",
-        description: "Crappy Birds, Founder and CEO",
+        description: "Founder of Crappy Birds, a Fun & Social MMO leveraging NFTs.",
         image: CrappyBirds,
         website: "https://www.crappybirds.io/",
         github: "https://github.com/Crappy-Birds",
@@ -61,13 +61,13 @@ export default function Index() {
             <section className="my-8">
                 <h1 className="mb-4 text-5xl font-extrabold bg-clip-text ">Hello, I'm Hugo Malatrait</h1>
                 <p className="text-lg text-zinc-200">
-                    I am passionate about computer sciences innovation, and always up for learning and building new things.
-                    I have experience in domains like web development, game design, game development, networking, cloud computing, blockchains and decentralization.
+                    I am passionate about computer sciences innovation, and always up for learning and building new things.<br />
+                    I have experience in domains like web development, game design, game development, cloud computing, blockchains and decentralization.
                 </p>
             </section>
             <section className="my-8">
                 <h2 className="mb-4 text-3xl font-bold">Latest projects</h2>
-                <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+                <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
                     {projects.map((project) => (
                         <ProjectCard
                             key={`${project.id}-${project.title}`}

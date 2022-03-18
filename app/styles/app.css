@@ -490,6 +490,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
 .flex {
   display: flex;
 }
@@ -510,8 +514,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100%;
 }
 
+.h-\[168px\] {
+  height: 168px;
+}
+
 .max-h-\[168px\] {
   max-height: 168px;
+}
+
+.max-h-full {
+  max-height: 100%;
 }
 
 .w-full {
@@ -524,6 +536,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-5xl {
   max-width: 64rem;
+}
+
+.max-w-\[168px\] {
+  max-width: 168px;
+}
+
+.max-w-full {
+  max-width: 100%;
 }
 
 .transform {
@@ -548,6 +568,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-start {
   justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -586,9 +610,48 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(39 39 42 / var(--tw-bg-opacity));
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#E482EF\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(228 130 239 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#fff\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#211B41\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(33 27 65 / var(--tw-bg-opacity));
+}
+
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.object-fill {
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .p-3 {
@@ -705,7 +768,67 @@ body {
 }
 
 @media (min-width: 768px) {
+  .md\:mr-3 {
+    margin-right: 0.75rem;
+  }
+
+  .md\:mt-0 {
+    margin-top: 0px;
+  }
+
+  .md\:h-\[168px\] {
+    height: 168px;
+  }
+
+  .md\:max-h-\[168px\] {
+    max-height: 168px;
+  }
+
+  .md\:min-h-\[168px\] {
+    min-height: 168px;
+  }
+
+  .md\:w-\[168px\] {
+    width: 168px;
+  }
+
+  .md\:max-w-\[168px\] {
+    max-width: 168px;
+  }
+
   .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:flex-row {
+    flex-direction: row;
+  }
+
+  .md\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .md\:object-cover {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .md\:object-fill {
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+
+  .md\:p-3 {
+    padding: 0.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:max-w-lg {
+    max-width: 32rem;
+  }
+
+  .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }

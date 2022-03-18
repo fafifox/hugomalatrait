@@ -10,16 +10,16 @@ interface ProjectCardProps {
 
 export const ProjectCard: React.FC<ProjectCardProps> = (props) => {
     return (
-        <div className="bg-zinc-800 text-zinc-50 border-2 border-zinc-700 p-3 rounded-3xl max-w-lg flex flew-row shadow-lg justify-start transition duration-500 ease-in-out hover:border-zinc-600">
-            <img src={props.image} className="rounded-2xl mr-3 max-h-[168px]" alt="" />
-            <div className="flex flex-col justify-between">
+        <div className="flex flex-col p-4 transition duration-500 ease-in-out border-2 shadow-lg lg:max-w-lg md:p-3 md:justify-start bg-zinc-800 text-zinc-50 border-zinc-700 rounded-3xl md:flex-row hover:border-zinc-600">
+            <img src={props.image} className={`object-cover bg-center md:mr-3 h-[168px] md:w-[168px] rounded-2xl`} alt="" />
+            <div className="flex flex-col justify-between mt-3 md:mt-0">
                 <h3 className="text-xl font-medium">{props.title}</h3>
                 <p className="text-base font-normal text-zinc-400">{props.description}</p>
                 <div className="space-x-3">
                     {props.website && (
                         <a
                             href={props.website}
-                            className="inline-flex items-center h-6 mb-2 text-sm font-normal leading-none text-zinc-200 transition duration-500 ease-in-out transform hover:text-zinc-400"
+                            className="inline-flex items-center h-6 mb-2 text-sm font-normal leading-none transition duration-500 ease-in-out transform text-zinc-200 hover:text-zinc-400"
                             target="_blank"
                             rel="noreferrer"
                         >
@@ -42,7 +42,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = (props) => {
                     {props.github && (
                         <a
                             href={props.github}
-                            className="inline-flex items-center h-6 mb-2 text-sm font-normal leading-none text-zinc-200 transition duration-500 ease-in-out transform hover:text-zinc-400"
+                            className="inline-flex items-center h-6 mb-2 text-sm font-normal leading-none transition duration-500 ease-in-out transform text-zinc-200 hover:text-zinc-400"
                             target="_blank"
                             rel="noreferrer"
                         >
